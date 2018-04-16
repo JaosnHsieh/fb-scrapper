@@ -1,0 +1,160 @@
+{
+	"info": {
+		"name": "fb-scrapper",
+		"_postman_id": "c388d382-c15b-26cb-42a0-9e4c2ba10f05",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "fb user data promise",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/promise/api/user/:username",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"promise",
+						"api",
+						"user",
+						":username"
+					],
+					"variable": [
+						{
+							"key": "username",
+							"value": ""
+						}
+					]
+				},
+				"description": "scrape a facebook user data, for example: http://localhost:8080/async/api/user/zuck"
+			},
+			"response": []
+		},
+		{
+			"name": "fb user data async",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/async/api/user/:username",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"async",
+						"api",
+						"user",
+						":username"
+					],
+					"variable": [
+						{
+							"key": "username",
+							"value": ""
+						}
+					]
+				},
+				"description": "scrape a facebook user data, for example: http://localhost:8080/async/api/user/zuck"
+			},
+			"response": []
+		},
+		{
+			"name": "mutual friends promise",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/promise/api/mutualfriends/:userId/:anotherUserId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"promise",
+						"api",
+						"mutualfriends",
+						":userId",
+						":anotherUserId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": ""
+						},
+						{
+							"key": "anotherUserId",
+							"value": ""
+						}
+					]
+				},
+				"description": "scrape mutual friends between two facebook user , for example : http://localhost:8080/promise/api/mutualfriends/528580612/625100033"
+			},
+			"response": []
+		},
+		{
+			"name": "mutual friends async",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/async/api/mutualfriends/:userId/:anotherUserId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"async",
+						"api",
+						"mutualfriends",
+						":userId",
+						":anotherUserId"
+					],
+					"variable": [
+						{
+							"key": "userId",
+							"value": ""
+						},
+						{
+							"key": "anotherUserId",
+							"value": ""
+						}
+					]
+				},
+				"description": "scrape mutual friends between two facebook user , for example : http://localhost:8080/async/api/mutualfriends/528580612/625100033"
+			},
+			"response": []
+		}
+	]
+}
