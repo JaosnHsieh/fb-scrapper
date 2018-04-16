@@ -14,8 +14,17 @@
 
 `npm run dev`
 
+## 快速開始
+
+1.  獲取 id 為 123 的 使用者資料及朋友清單(必須有設定公開朋友清單)
+    `curl http://localhost:8080/async/api/user/123`
+2.  獲取 id 為 456 的 使用者資料及朋友清單(必須有設定公開朋友清單)
+    `curl http://localhost:8080/async/api/user/456`
+3.  取得 id 為 123 和 id 為 456 的共同好友
+    `curl http://localhost:8080/async/api/mutualfriends/123/456`
+
 ## API 使用說明
 
-https://documenter.getpostman.com/view/652718/fb-scrapper/RVuABmwg#623cc559-06d9-5ac9-046f-51c188e4e61a
+https://documenter.getpostman.com/view/652718/fb-scrapper/RVuABmwg
 
 或者使用 `fb-scrapper.postman_collection.json` 匯入 POSTMAN

@@ -32,7 +32,7 @@
 						}
 					]
 				},
-				"description": "scrape a facebook user data, for example: http://localhost:8080/async/api/user/zuck"
+				"description": "scrape a facebook user data, for example: http://localhost:8080/promise/api/user/zuck\nor\nhttp://localhost:8080/promise/api/user/4"
 			},
 			"response": []
 		},
@@ -62,7 +62,7 @@
 						}
 					]
 				},
-				"description": "scrape a facebook user data, for example: http://localhost:8080/async/api/user/zuck"
+				"description": "scrape a facebook user data, for example: http://localhost:8080/async/api/user/zuck\nor\nhttp://localhost:8080/async/api/user/4"
 			},
 			"response": []
 		},
