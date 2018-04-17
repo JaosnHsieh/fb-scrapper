@@ -16,10 +16,14 @@
 
 ## 快速開始
 
-1.  獲取 id 為 123 的 使用者資料及朋友清單(必須有設定公開朋友清單)
+1.  獲取 id 為 123 的 使用者資料及朋友清單並存入資料庫(必須有設定公開朋友清單)
     `curl http://localhost:8080/async/api/user/123`
-2.  獲取 id 為 456 的 使用者資料及朋友清單(必須有設定公開朋友清單)
+    或者相對應的 user name
+    `curl http://localhost:8080/async/api/user/zuck`
+2.  獲取 id 為 456 的 使用者資料及朋友清單並存入資料庫(必須有設定公開朋友清單)
     `curl http://localhost:8080/async/api/user/456`
+    或者相對應的 user name
+    `curl http://localhost:8080/async/api/user/zuck2`
 3.  取得 id 為 123 和 id 為 456 的共同好友
     `curl http://localhost:8080/async/api/mutualfriends/123/456`
 
